@@ -38,11 +38,18 @@ section{
 
 .links{
     width: 100%;
-    height: 10em;
+    height: 12em;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 1em;
+    padding-top: 2em;
+}
+
+.links h2{
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .links a{
@@ -50,11 +57,24 @@ section{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: black;
-    background-color: #22D4FD;
-    width: 12em;
-    height: 3em;
+    font-size: 10px;
+    gap: 0.5em;
+    color: white;
+    width: 50%;
+    height: 6em;
     border-radius: 0.6em;
+    border: 1px solid #22D4FD;
+    transition: 0.2s;
+}
+
+.links a:hover{
+    cursor: pointer;
+    background-color: #22D4FD;
+}
+
+.links img{
+    height: 1.5em;
+    background-color: black;
 }
 
 header{
@@ -77,7 +97,16 @@ nav a{
     font-family: 'Montserrat', sans-serif;
 }
 
-
+footer{
+    background-color: #22D4FD;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
 
 
@@ -93,12 +122,14 @@ nav a{
         flex-direction: column;
         width: 90%;
         margin-left: 1em;
+        text-align: center;
     }
 
     .imagem {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 1em;
     }
     .imagem img{
         width: 50%;
@@ -106,5 +137,9 @@ nav a{
 
     header{
         width: 100%;
+    }
+
+    footer{
+        margin-top: 2em;
     }
 }
